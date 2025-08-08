@@ -1,13 +1,40 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Portfolio Tom</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="min-h-screen bg-gradient-to-br from-purple-900 via-purple-700 to-purple-400 text-white flex flex-col items-center justify-center px-4">
+
+    <img src="./portrait.png" alt="Photo de Tom" class="w-32 h-32 rounded-full shadow-lg mb-6" />
+
+    <h1 class="text-4xl font-bold mb-2">Bonjour, je suis Tom</h1>
+    <p class="text-lg text-center max-w-xl mb-8">
+      Passionné par la restauration, j’aime offrir des expériences culinaires chaleureuses et mémorables.
+    </p>
+
+    <div class="bg-purple-800 bg-opacity-60 p-6 rounded-xl shadow-md w-full max-w-md border border-purple-300">
+      <div class="flex  items-center justify-between">
+          <img src="./ustensiles-de-cuisine.png" alt="icone-couverts" class="w-10 h-10">
+          <h2 class="text-xl font-semibold text-yellow-300 mb-4 ">Compétences principales</h2>
+          <img src="./icons8-cuisine-100.png" alt="ustensiles" class="w-10 h-10">
+      </div>
+      
+      <ul class="list-disc list-inside space-y-2 text-white">
+        <li>Service en salle & relation client</li>
+        <li>Gestion des commandes & encaissement</li>
+        <li>Organisation en cuisine</li>
+        <li>Hygiène & sécurité alimentaire</li>
+      </ul>
+    </div>
+
+    
+    <a href="mailto:[example@example.fr]" class="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300">
+      Me contacter
+    </button>
+
     <script type="module" src="/src/main.js"></script>
+    
   </body>
 </html>
